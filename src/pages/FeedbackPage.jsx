@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const API_BASE = 'http://localhost:3001/api';
+const API_BASE = 'https://priorix-awgf.onrender.com/api';
 
 function FeedbackPage() {
     const [feedback, setFeedback] = useState([]);
