@@ -2,23 +2,23 @@
 
 **Decide what to fix first.**
 
-Priorix is a feedback prioritization system that helps teams import feedback from multiple sources, automatically assess urgency and impact, and clearly order what should be addressed first.
+Priorix is a feedback prioritization system designed to help engineering and product teams clearly understand what issues matter most, act on them first, and analyze trends over time.
 
 Live Demo:  
-👉 https://priorix-ruddy.vercel.app
+https://priorix-ruddy.vercel.app
 
 ---
 
-## What Priorix Does
+## What Priorix Is
 
-Priorix is built for **engineering and product teams** to:
+Priorix helps teams:
 
-- Import feedback from external sources (CSV, API, sample dataset)
-- Automatically categorize feedback (System Failure, Bug, UI, Feature)
-- Assign a deterministic priority score (0–100) with a short reason
-- Clearly order feedback by urgency
-- Track resolution progress
-- Analyze trends over time
+- Import feedback from external sources  
+- Automatically analyze urgency and impact  
+- Assign clear priority scores (0–100)  
+- Order feedback so teams know what to fix first  
+- Track progress and resolution velocity  
+- Analyze trends over time  
 
 ---
 
@@ -26,59 +26,48 @@ Priorix is built for **engineering and product teams** to:
 
 - ❌ Not a feedback collection form  
 - ❌ Not a monitoring or uptime dashboard  
-- ❌ Not a ticketing or issue tracker  
+- ❌ Not a ticketing system  
 - ❌ Not an AI chat or assistant  
-
-Its sole purpose is **prioritization and decision clarity**.
 
 ---
 
 ## Core Features
 
-### 1. Feedback Ingestion
+### Feedback Ingestion
 - Sample feedback dataset (for testing)
 - CSV import
 - REST API ingestion using API keys
-- Ability to clear or reset data
+- Clear / reset data controls
 
-### 2. AI Prioritization Engine
+### AI Prioritization Engine
 For every feedback item:
-- Category
+- Category (System Failure, Bug, UI, Feature)
 - Priority score (0–100)
 - Short plain-language reason
 
-The engine is **deterministic** — the same input always produces the same output.
-
-### 3. Actionable Workflow
-Each feedback item supports:
+### Actionable Workflow
 - Mark In Progress
 - Mark Resolved
 - Lower Priority
 
-Actions update state immediately and are logged.
-
-### 4. Analytics (Decision-Focused)
+### Analytics
 - Resolution velocity
 - Category trend spikes
 - Priority distribution over time
-
-No vanity metrics. No pie charts.
 
 ---
 
 ## Tech Stack
 
-### Frontend
+Frontend:
 - React (Vite)
-- Modern CSS with glassmorphic “liquid glass” design
-- React Router
 
-### Backend
+Backend:
 - Node.js
 - Express
-- SQLite (for demo / MVP)
+- SQLite
 
-### Deployment
+Deployment:
 - Frontend: Vercel
 - Backend: Render
 
@@ -86,75 +75,37 @@ No vanity metrics. No pie charts.
 
 ## Local Development
 
-### 1. Clone the repository
 ```bash
 git clone https://github.com/your-username/priorix.git
 cd priorix
-2. Install dependencies
-bash
-Copy code
 npm install
 cd server
 npm install
-3. Start the backend
-bash
-Copy code
-cd server
 node index.js
-Backend runs on:
+```
 
-arduino
-Copy code
-http://localhost:3001
-4. Start the frontend
-bash
-Copy code
+Frontend:
+```bash
 npm run dev
-Frontend runs on:
+```
 
-arduino
-Copy code
-http://localhost:5173
-API Base URLs
-Production
-text
-Copy code
-https://priorix-awgf.onrender.com/api
-Local Development
-text
-Copy code
-http://localhost:3001/api
-API Example (cURL)
-bash
-Copy code
+---
+
+## API Example
+
+```bash
 curl -X POST https://priorix-awgf.onrender.com/api/feedback \
   -H "Content-Type: application/json" \
-  -H "X-API-Key: YOUR_API_KEY_HERE" \
+  -H "X-API-Key: YOUR_API_KEY" \
   -d '{"content":"Login outage in production","source":"api"}'
-Replace YOUR_API_KEY_HERE with a key generated in Settings.
+```
 
-Testing the System
-Open Data Import
+---
 
-Load the sample dataset or upload a CSV
+## License
 
-Go to Feedback Prioritization
+MIT
 
-Take actions on feedback items
+---
 
-View trends in Analytics
-
-All features work end-to-end without external dependencies.
-
-Known Limitations
-SQLite storage is not persistent across backend redeploys
-
-Designed for MVP, demos, and hackathons
-
-Can be upgraded to PostgreSQL for full production use
-
-License
-MIT License
-
-Author
 Built by Rahul Walawalkar
