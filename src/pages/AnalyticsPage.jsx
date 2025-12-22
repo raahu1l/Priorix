@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { LineChart, Line, AreaChart, Area, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 
-const API_BASE = 'http://localhost:3001/api';
+const API_BASE = 'https://priorix-awgf.onrender.com/api';
 
 function AnalyticsPage() {
     const [analytics, setAnalytics] = useState(null);

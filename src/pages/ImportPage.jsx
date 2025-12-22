@@ -197,11 +197,12 @@ function ImportPage() {
                 <div className="import-card glass-solid" style={{ gridColumn: 'span 2' }}>
                     <h3>REST API</h3>
                     <div className="code-block">
-                        curl -X POST http://localhost:3001/api/feedback{'\n'}
-                        -H "Content-Type: application/json"{'\n'}
-                        -H "X-API-Key: {activeApiKey}"{'\n'}
-                        -d {"{\"content\":\"Login outage in production\"}"}
+                        {`curl -X POST https://priorix-awgf.onrender.com/api/feedback \\
+  -H "Content-Type: application/json" \\
+  -H "X-API-Key: YOUR_API_KEY_HERE" \\
+  -d '{"content":"Login outage in production","source":"api"}'`}
                     </div>
+
                 </div>
             </div>
 

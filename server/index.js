@@ -454,5 +454,5 @@ app.delete('/api/debug/cleanup-invalid-feedback', (req, res) => {
 
 // Start server
 app.listen(PORT, () => {
-  console.log(`Feedback Prioritization API running on http://localhost:${PORT}`);
+  console.log(`Feedback Prioritization API running on port ${PORT}`);
 });
