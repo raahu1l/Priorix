@@ -1,63 +1,111 @@
-# React + Vite
+# Priorix
 
-# FeedbackFlow
+**Decide what to fix first.**
 
-A platform for intelligent, automated feedback management and streamlined prioritization.
+Priorix is a feedback prioritization system designed to help engineering and product teams clearly understand what issues matter most, act on them first, and analyze trends over time.
 
----
-
-FeedbackFlow enables organizations to efficiently collect, analyze, and act on feedback through a smart, responsive interface and advanced automation processes.
-
----
-
-## Problem Addressed
-
-Organizations often struggle with turning scattered feedback into immediately actionable insights. Manual handling slows down decision-making, and important issues can be overlooked among routine submissions. FeedbackFlow solves this by providing a seamless system to collect feedback, highlight urgent concerns, and empower teams to respond quickly and effectively.
+Live Demo:  
+https://priorix-ruddy.vercel.app
 
 ---
 
-## Features
+## What Priorix Is
 
-- **Smart Prioritization:** Feedback is automatically analyzed and urgency assigned using intelligent automation.
-- **Dedicated Workflows:**  
-  - *Submit Feedback*: Simple entry point for users or customers.
-  - *Team Portal*: Secure, feature-rich dashboard for analytics and feedback management.
-- **Live Analytics:** Dashboard displays up-to-date feedback counts, urgency categories, and trends.
-- **Bulk Actions & Export:** Filter, search, and export data easily as CSV reports.
-- **Demo Mode:** Instantly populate the app with realistic sample feedback for demonstration purposes.
-- **Mobile-First Design:** Fully responsive and touch-friendly UI.
-- **Accessible:** High-contrast, color-coded priority and keyboard navigation.
+Priorix helps teams:
 
----
-
-## Technology
-
-- Built with React and Vite for a modern, fast Single Page Application experience.
-- Custom CSS for all components.
-- All data stored client-side for privacy and simplicity.
-- Automated project setup and build using AI-powered tools and advanced prototyping environments (including Cursor).
+- Import feedback from external sources  
+- Automatically analyze urgency and impact  
+- Assign clear priority scores (0–100)  
+- Order feedback so teams know what to fix first  
+- Track progress and resolution velocity  
+- Analyze trends over time  
 
 ---
 
-## Quickstart
+## What Priorix Is NOT
 
-git clone https://github.com/raahu1/Feedback_prioritizer.git
-cd Feedback_prioritizer
+- ❌ Not a feedback collection form  
+- ❌ Not a monitoring or uptime dashboard  
+- ❌ Not a ticketing system  
+- ❌ Not an AI chat or assistant  
+
+---
+
+## Core Features
+
+### Feedback Ingestion
+- Sample feedback dataset (for testing)
+- CSV import
+- REST API ingestion using API keys
+- Clear / reset data controls
+
+### AI Prioritization Engine
+For every feedback item:
+- Category (System Failure, Bug, UI, Feature)
+- Priority score (0–100)
+- Short plain-language reason
+
+### Actionable Workflow
+- Mark In Progress
+- Mark Resolved
+- Lower Priority
+
+### Analytics
+- Resolution velocity
+- Category trend spikes
+- Priority distribution over time
+
+---
+
+## Tech Stack
+
+Frontend:
+- React (Vite)
+
+Backend:
+- Node.js
+- Express
+- SQLite
+
+Deployment:
+- Frontend: Vercel
+- Backend: Render
+
+---
+
+## Local Development
+
+```bash
+git clone https://github.com/your-username/priorix.git
+cd priorix
 npm install
-npm run dev # For development server
-npm run build # Production build
-npm run preview # Preview prod build locally
+cd server
+npm install
+node index.js
+```
 
-## Deployment
-
-Deployed URL: https://feedback-prioritizer.onrender.com
-
-## Credits
-
-Built using modern AI automation and rapid coding tools to accelerate development and ensure industry-standard quality and usability.
-This project was developed using modern AI-based automation platforms and rapid prototyping tools, including Cursor, to accelerate development and ensure production-ready quality.
+Frontend:
+```bash
+npm run dev
+```
 
 ---
 
-_Experience smoother, smarter feedback management for any team or product—just submit, analyze, and act!
+## API Example
 
+```bash
+curl -X POST https://priorix-awgf.onrender.com/api/feedback \
+  -H "Content-Type: application/json" \
+  -H "X-API-Key: YOUR_API_KEY" \
+  -d '{"content":"Login outage in production","source":"api"}'
+```
+
+---
+
+## License
+
+MIT
+
+---
+
+Built by Rahul Walawalkar
