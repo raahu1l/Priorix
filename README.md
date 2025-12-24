@@ -9,6 +9,36 @@ https://priorix-ruddy.vercel.app
 
 ---
 
+## Why Priorix Exists
+
+Product teams don’t struggle to *collect* feedback.  
+They struggle to **decide what to fix first**.
+
+Bugs, crashes, UX issues, and feature requests come from everywhere:
+- Internal teams
+- User reports
+- CSV exports
+- APIs
+- Post-release feedback
+
+The problem isn’t volume — it’s **priority**.
+
+Most tools turn product feedback into:
+- Long, unstructured lists
+- Equal-weight tickets
+- Subjective opinions
+- Reactive firefighting
+
+**Priorix exists to solve one problem:**
+
+> Help product and engineering teams clearly understand which software issues matter most — right now.
+
+By focusing only on **product feedback** and scoring it by urgency and impact, Priorix gives teams a clear, shared answer to:
+
+> **“What should we fix next?”**
+
+---
+
 ## What Priorix Is
 
 Priorix is a **product & engineering feedback prioritization system**.
