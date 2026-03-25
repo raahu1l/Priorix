@@ -133,7 +133,9 @@ curl -X POST https://priorix-awgf.onrender.com/api/feedback \
 📧 walawalkarrahul729@gmail.com  
 🔗 https://github.com/raahu1l  
 
-Built with assistance of AI
+---
+
+Built with the support of advanced AI tools to streamline development, improve architecture decisions, and enhance overall system design.
 
 ---
 
