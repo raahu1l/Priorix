@@ -48,6 +48,19 @@ https://priorix-ruddy.vercel.app
 
 ---
 
+## 📸 Screenshots
+
+### Feedback Prioritization
+![Main Screen](public/screenshots/MainScreen.png)
+
+### Analytics
+![Analytics](public/screenshots/Analytics.png)
+
+### Data Import
+![Data Import](public/screenshots/DataImport.png)
+
+---
+
 ## 🛠️ Tech Stack
 
 | Layer | Technology |
