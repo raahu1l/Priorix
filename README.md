@@ -1,193 +1,87 @@
-# Priorix
+<div align="center">
+
+# 🧠 Priorix — Product Feedback Prioritization System
 
 **Prioritize product feedback. Fix what matters first.**
 
-Priorix helps product teams prioritize **software product feedback** — bugs, failures, UX issues, and feature requests — based on urgency and impact.
+[![React](https://img.shields.io/badge/React-Vite-61DAFB?style=for-the-badge&logo=react&logoColor=black)]()
+[![Node.js](https://img.shields.io/badge/Node.js-Backend-339933?style=for-the-badge&logo=node.js&logoColor=white)]()
+[![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?style=for-the-badge&logo=sqlite&logoColor=white)]()
+[![Version](https://img.shields.io/badge/Version-1.0.0-orange?style=for-the-badge)]()
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)]()
 
-Live Demo:  
+> A focused product feedback prioritization system that helps teams **analyze, score, and act on software issues** based on urgency and impact — enabling clear, data-driven decisions.
+
+</div>
+
+---
+
+## 🌐 Live Demo
+
 https://priorix-ruddy.vercel.app
 
 ---
 
-## Why Priorix Exists
+## 📱 Features
 
-Product teams don’t struggle to *collect* feedback.  
-They struggle to **decide what to fix first**.
+### 📥 Feedback Ingestion
+- Import product feedback via CSV, API, or sample dataset
+- Supports bugs, failures, UX issues, and feature requests
+- Reset and test datasets easily
 
-Bugs, crashes, UX issues, and feature requests come from everywhere:
-- Internal teams
-- User reports
-- CSV exports
-- APIs
-- Post-release feedback
+### 🤖 AI Prioritization Engine
+- Categorizes feedback (System Failure, Bug, UI, Feature)
+- Assigns priority score (0–100)
+- Provides clear reasoning for every score
+- Deterministic and explainable outputs
 
-The problem isn’t volume — it’s **priority**.
+### ⚙️ Workflow Actions
+- Mark items as In Progress or Resolved
+- Lower priority dynamically
+- Real-time priority queue reordering
+- Audit trail logging
 
-Most tools turn product feedback into:
-- Long, unstructured lists
-- Equal-weight tickets
-- Subjective opinions
-- Reactive firefighting
-
-**Priorix exists to solve one problem:**
-
-> Help product and engineering teams clearly understand which software issues matter most — right now.
-
-By focusing only on **product feedback** and scoring it by urgency and impact, Priorix gives teams a clear, shared answer to:
-
-> **“What should we fix next?”**
-
----
-
-## What Priorix Is
-
-Priorix is a **product & engineering feedback prioritization system**.
-
-It is designed specifically for **software teams** to:
-
-- Bring together product feedback from an app or SaaS
-- Automatically assess urgency and impact
-- Assign clear, explainable priority scores (0–100)
-- Order issues so teams know what to fix first
-- Track progress from pending → resolved
-- Analyze product feedback trends over time
-
-This tool exists to answer one question clearly:
-
-> **“What should we fix next?”**
-
----
-
-## What Priorix Is NOT
-
-Priorix is **not** a generic feedback tool.
-
-It does **not** support:
-- ❌ Customer support tickets
-- ❌ Sales or marketing feedback
-- ❌ HR or internal feedback
-- ❌ Surveys or opinion collection
-- ❌ Social media sentiment analysis
-- ❌ Monitoring or uptime dashboards
-
-If feedback is **not about a software product**, it does not belong in Priorix.
-
----
-
-## Core Features
-
-### Feedback Ingestion (Product Feedback Only)
-
-Priorix does **not** collect feedback itself.  
-It ingests feedback from external sources related to your product.
-
-Supported inputs:
-- Sample product feedback dataset (for testing)
-- CSV import (bugs, issues, feature requests)
-- REST API ingestion with API keys
-
-You can:
-- Load sample data
-- Clear or reset data
-- Test the full prioritization flow before deployment
-
----
-
-### AI Prioritization Engine
-
-Every feedback item is analyzed and assigned:
-
-- **Category**
-  - System Failure
-  - Bug
-  - UI
-  - Feature
-- **Priority Score** (0–100)
-- **Short, plain‑language reason** explaining the score
-
-The engine is deterministic and transparent — no vague AI outputs.
-
----
-
-### Actionable Workflow
-
-Each feedback item supports real actions:
-
-- Mark In Progress
-- Mark Resolved
-- Lower Priority
-
-Actions:
-- Update state immediately
-- Reorder the priority queue
-- Are logged in the audit trail
-
-No fake buttons. No external integrations in this version.
-
----
-
-### Analytics (Decision‑Focused)
-
-Analytics exist to improve prioritization decisions — not to show vanity metrics.
-
-Included insights:
-- Resolution velocity over time
-- Category trend spikes
+### 📊 Analytics (Decision-Focused)
+- Resolution velocity tracking
+- Category spike detection
 - Priority distribution trends
 
-Excluded by design:
-- ❌ Pie charts
-- ❌ System health metrics
-- ❌ Ingestion volume dashboards
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|------|-----------|
+| Frontend | React (Vite) |
+| Backend | Node.js · Express |
+| Database | SQLite |
+| Deployment | Vercel · Render |
 
 ---
 
-## Screenshots
+## 🏗️ Architecture
 
-### Feedback Prioritization
-![Main Screen](public/screenshots/MainScreen.png)
-
-### Analytics
-![Analytics](public/screenshots/Analytics.png)
-
-### Data Import
-![Data Import](public/screenshots/DataImport.png)
+```
+client/        # React frontend
+server/        # Express backend
+database/      # SQLite storage
+api/           # API routes
+```
 
 ---
 
-## Tech Stack
+## 🚀 Getting Started
 
-**Frontend**
-- React (Vite)
-
-**Backend**
-- Node.js
-- Express
-- SQLite
-
-**Deployment**
-- Frontend: Vercel
-- Backend: Render
-
----
-
-## Local Development
-
-Clone the repository:
+### Setup
 
 ```bash
 git clone https://github.com/your-username/priorix.git
 cd priorix
-```
-
-Install frontend dependencies and start dev server:
-
-```bash
 npm install
 npm run dev
 ```
 
-Start backend server:
+### Backend
 
 ```bash
 cd server
@@ -195,15 +89,12 @@ npm install
 node index.js
 ```
 
-Frontend runs at:
-http://localhost:5173
-
-Backend API runs at:
-http://localhost:3001
+Frontend: http://localhost:5173  
+Backend: http://localhost:3001  
 
 ---
 
-## API Example
+## 🔌 API Example
 
 ```bash
 curl -X POST https://priorix-awgf.onrender.com/api/feedback \
@@ -214,10 +105,27 @@ curl -X POST https://priorix-awgf.onrender.com/api/feedback \
 
 ---
 
-## License
+## 🗺️ Roadmap
 
-MIT
+- [ ] Smarter scoring model
+- [ ] Team collaboration features
+- [ ] Export reports
+- [ ] Role-based dashboards
 
 ---
 
-Built by **Rahul Walawalkar**
+## 👨‍💻 Author
+
+**Rahul Walawalkar**  
+📧 walawalkarrahul729@gmail.com  
+🔗 https://github.com/raahu1l  
+
+Built with assistance of AI
+
+---
+
+<div align="center">
+
+Built with ❤️ · Star ⭐ if you find it useful
+
+</div>
